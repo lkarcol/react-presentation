@@ -13,16 +13,21 @@
     "react-fabricjs": "^0.1.6",
     "react-konva": "^1.1.1",
     "react-redux": "^5.0.3",
+    "react-tinymce": "^0.5.1",
     "reactstrap": "^4.3.0",
     "redux": "^3.6.0"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://mnichovcan.github.io/react-presentation"
 }

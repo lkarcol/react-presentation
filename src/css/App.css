@@ -20,6 +20,7 @@
 
 .right{
     padding: 10px;
+    min-height: 500px;
 }
 textarea {position: absolute;
 border: 2px solid blue;
@@ -30,4 +31,25 @@ border: 2px solid blue;
  
     margin: auto;
     border: 1px solid lightslategrey;
+}
+
+canvas{
+    padding:10px;
+}
+
+.btn{
+    margin-right: 5px;
+}
+
+.btn:hover{
+    border:1px solid red;
+    margin-right: 5px;
+}
+
+.mce-notification-warning{
+    display:none;
+}
+
+#mceu_26{
+    display: none;
 }

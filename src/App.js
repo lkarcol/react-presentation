@@ -3,7 +3,7 @@ import { Container, Row, Col, Nav, NavItem, NavLink } from 'reactstrap';
 import { connect } from 'react-redux';
 
 
-import  Platno  from './components/Canvas';
+import  Main  from './components/Main';
 import  LP  from './components/LeftPanel';
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
           <Row>
             <Col className="left" xs="2" sm="2"><LP /></Col>
             <Col className="right" xs="10" sm={{ size: 8, offset: 1 }}>
-              <Platno></Platno>
+              <Main></Main>
             </Col>
           </Row>
         </div>

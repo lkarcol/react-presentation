@@ -6,35 +6,25 @@ export  function newSlide(slide){
     }
 };
 
-export  function newText(text,sid){
+
+export  function updateContent(text,sid){
 //console.log(slide);
     return {
-        type:'NewText',
+        type:'UpdateContent',
         text,
         sid
     }
 }
 
-export  function updateText(text,tid,sid){
+export  function deleteSlide(sid){
 //console.log(slide);
     return {
-        type:'UpdateText',
-        text,
-        sid,
-        tid
+        type:'DELETE_SLIDE',
+        sid
     }
 }
 
-export  function updateTextPositon(tid,sid,coor){
-//console.log(slide);
-    return {
-        type:'UpdateTextPositon',
-        sid,
-        tid,
-        top:coor.top,
-        left:coor.left
-    }
-}
+
 
 export  function setSlide(sid){
 //console.log(slide);
@@ -44,10 +34,3 @@ export  function setSlide(sid){
     }
 }
 
-export  function setForWriting(s){
-//console.log(slide);
-    return {
-        type:'Writing',
-        w:s
-    }
-}

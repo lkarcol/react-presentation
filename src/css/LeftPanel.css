@@ -4,4 +4,10 @@
     background-color: white;
     margin-left: 15px;
     margin-bottom: 15px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.thumb:hover{
+    border: 3px solid red; 
 }

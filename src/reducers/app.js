@@ -1,7 +1,5 @@
 const appInitialState = {
-    activeSlide: 0,
-    writing: false,
-    fontSize: 15
+    activeSlide: ""
 }
 
 export default function app(state = appInitialState, action) {
@@ -9,11 +7,8 @@ export default function app(state = appInitialState, action) {
         case 'SetSlide':
             let n = Object.assign({}, state);
             n.activeSlide = action.sid;
+            console.log("Aktiv: "+n.activeSlide);
             return n;
-        case 'Writing':
-            let w = Object.assign({}, state);
-            w.writing = action.w;
-            return w;
         default:
             return state
     }
