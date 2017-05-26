@@ -1,0 +1,28 @@
+{
+  "name": "power",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "fabric": "^1.7.8",
+    "konva": "^1.5.0",
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-fabricjs": "^0.1.6",
+    "react-konva": "^1.1.1",
+    "react-redux": "^5.0.3",
+    "reactstrap": "^4.3.0",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
