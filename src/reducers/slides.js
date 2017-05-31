@@ -1,5 +1,5 @@
 const slideInitialState = {
-
+   
 };
 export default function slide(state = slideInitialState, action) {
     switch (action.type) {
@@ -16,15 +16,9 @@ export default function slide(state = slideInitialState, action) {
             return t;
         case 'DELETE_SLIDE':
              sid = action.sid;
-              // delete state[sid];
-             t = {};
-             for (let value in state){
-                if(value != sid){
-                    t[value] = state[value];
-                }                 
-             }
-            console.log(t);
-            return t;
+             let newState = Object.assign({},state);
+             delete newState[sid];
+            return newState;
         default:
             return state
     }

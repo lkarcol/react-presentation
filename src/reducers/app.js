@@ -1,5 +1,6 @@
 const appInitialState = {
-    activeSlide: ""
+    activeSlide: "",
+    slider:false
 }
 
 export default function app(state = appInitialState, action) {
@@ -7,7 +8,6 @@ export default function app(state = appInitialState, action) {
         case 'SetSlide':
             let n = Object.assign({}, state);
             n.activeSlide = action.sid;
-            console.log("Aktiv: "+n.activeSlide);
             return n;
         default:
             return state

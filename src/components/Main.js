@@ -5,19 +5,24 @@ import Slide from './Slide';
 
 class Main extends Component {
 
+
+
     slideRender() {
         const {app, slide} = this.props;
 
-        if (Number.isInteger(app.activeSlide)) {
+        if (Number.isInteger(app.activeSlide) ) {
+           console.log(app);
             let content = slide[app.activeSlide].content;
-            return <Slide content={content} />
+            return <Slide content={content} {...this.props} />
         }
+
+        return "";
     }
 
     render() {
+     
         return (
             <div>
-                <Tools />
                 {this.slideRender()}
             </div>
         )

@@ -9,7 +9,7 @@ class LeftPanel extends Component {
 
     setSlide(val) {
         let {dispatch} = this.props;
-        dispatch(setSlide(parseInt(val)));
+        dispatch(setSlide(parseInt(val,10)));
     }
 
     generateThumb() {

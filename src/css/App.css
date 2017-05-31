@@ -1,5 +1,4 @@
 .container-fluid{
-    margin-top: 10px;
     padding: 0;
 }
 
@@ -33,9 +32,6 @@ border: 2px solid blue;
     border: 1px solid lightslategrey;
 }
 
-canvas{
-    padding:10px;
-}
 
 .btn{
     margin-right: 5px;
@@ -52,4 +48,31 @@ canvas{
 
 #mceu_26{
     display: none;
+}
+
+#slider{
+    font-size: initial;
+}
+
+#tools{
+    width: 100%;
+    background-color: rgb(61, 65, 66);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#sliderPanel{
+    width: 100%;
+    
+    background-color: rgb(61, 65, 66);
+    top: 0%;
+    z-index: 1;
+    position: fixed;
+    padding: 10px;
+
+}
+
+#sliderSlide{
+    margin-top: 10px;
+  padding: 50px;
 }
