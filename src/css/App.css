@@ -76,3 +76,9 @@ border: 2px solid blue;
     margin-top: 10px;
   padding: 50px;
 }
+
+#link-window{
+    margin-bottom: 10px;
+    width: 50%;
+    border:1px solid black;
+}

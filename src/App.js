@@ -16,7 +16,7 @@ class App extends Component {
           <Row>
             <Col className="left" xs="2" sm="2"><LP /></Col>
             <Col className="right" xs="10" sm={{ size: 8, offset: 1 }}>
-              <Main></Main>
+              <Main {...this.props} />
             </Col>
           </Row>
         </div>

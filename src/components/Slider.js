@@ -58,7 +58,7 @@ class Slider extends Component {
 
     slideGenerator() {
         const slides = this.props.slide;
-
+        
         let sliderContent = this.state.slides;
 
         for (let val in slides) {

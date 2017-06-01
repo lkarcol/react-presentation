@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-
+import { connect } from 'react-redux';
 import TinyMCE from 'react-tinymce';
 import { updateContent } from './../actions/slides';
 
@@ -11,25 +11,23 @@ class Slide extends Component {
   }
 
   _handleEditorChange(e) {
-    const {dispatch, app} = this.props;
-    console.log(app);
+    const {dispatch,app} = this.props;
+    //console.log(this.props);
+   
     dispatch(updateContent(e.target.getContent(), app.activeSlide));
   }
 
   _init(e) {
+    console.log("init");
     this.tiny = e.target;
     this.tiny.setContent(this.props.content);
   }
 
   componentWillReceiveProps(nextProps) {
-
     let sid = this.props.app.activeSlide;
- 
-    if (sid != nextProps.app.activeSlide ) {
+    let nextSid = nextProps.app.activeSlide;
+     if(sid != nextSid)
       this.tiny.setContent(nextProps.content);
-      return true;
-    }
-    return false;
   }
 
   render() {
@@ -65,4 +63,11 @@ class Slide extends Component {
 }
 
 
-export default Slide                    
+const mapStateToProps = (state, ownProps) => {
+    return {
+        slide: state.slide,
+        app: state.appc
+    }
+}
+
+export default connect(mapStateToProps)(Slide)                 
