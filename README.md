@@ -3,5 +3,5 @@ and with Redux for state management , Redux-Thunk and Firebase for sharing docum
 
 Project is simple "presentation" app like powerpoint. Slides are documents or pages created in the TinyMCE editor.
 
-[Demo app](https://mnichovcan.github.io/react-presentation/#/)
+[Demo app](https://lkarcol.github.io/react-presentation/#/)
 
